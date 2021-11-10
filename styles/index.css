@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Cinzel+Decorative:wght@700&family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Megrim&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-image: url("../assets/img/bg.png");
+}
+
+body .master {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+header {
+  height: 150px;
+  width: 100%;
+  background-image: url("../assets/img/library.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  text-align: center;
+  color: #f5f5f5;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 3rem;
+}
+
+header .top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header .top-bar .icon-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+header .top-bar .icon-menu-bar {
+  background-color: white;
+  width: 30px;
+  height: 4px;
+  border-radius: 15px;
+  position: relative;
+}
+
+header .top-bar .icon-menu-bar::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 15px;
+  background: white;
+  top: -0.5em;
+}
+
+header .top-bar .icon-menu-bar::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 15px;
+  background: white;
+  top: 0.5em;
+}
+
+header .top-bar .main-nav {
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+
+header .top-bar .main-nav .menu {
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-125%);
+          transform: translateX(-125%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+header .top-bar .main-nav .menu-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header .top-bar .main-nav .menu .menu-item {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 1.3rem;
+}
+
+header .top-bar .main-nav .menu .menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transform: translatex(-100%);
+          transform: translatex(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+header .top-bar .main-nav .menu .menu-item:hover::after {
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
+}
+
+header .top-bar .main-nav .menu .cart {
+  cursor: pointer;
+}
+
+header .cart-buy {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  color: white;
+  background-color: black;
+  outline: 1px solid white;
+  outline-offset: -10px;
+  width: 50%;
+  padding: 1rem;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+header .cart-buy-show {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+header .list-products {
+  list-style-type: decimal;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+main .card-main .card {
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  background-color: #14181c;
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+main .card-main .card img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 4px double white;
+  margin-bottom: 5px;
+}
+
+main .card-main .card img:hover {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .card-main .card .info {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+main .card-main .card .btn-add-cart {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+  height: 50px;
+  background-color: #14181c;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+main .card-main .card .btn-add-cart:hover {
+  background: #0d6efd;
+  -webkit-box-shadow: 0 0 10px #0d6efd, 0 0 40px #0d6efd, 0 0 80px #0d6efd;
+          box-shadow: 0 0 10px #0d6efd, 0 0 40px #0d6efd, 0 0 80px #0d6efd;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #14181c;
+}
+
+footer .sign {
+  font-family: 'Megrim', cursive;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  header .icon-menu {
+    display: none !important;
+  }
+  header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */

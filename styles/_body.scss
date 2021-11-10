@@ -1,0 +1,39 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Cinzel+Decorative:wght@700&family=Monoton&display=swap");
+// font-family: "Cinzel Decorative", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+// font-family: 'Indie Flower', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Megrim&display=swap");
+// font-family: 'Megrim', cursive;
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-image: url("../assets/img/bg.png");
+  .master {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+// img {
+//   display: block;
+//   width: 100%;
+//   max-width: 100%;
+// }

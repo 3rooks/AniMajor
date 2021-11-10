@@ -1,0 +1,34 @@
+// MEDIA Q
+//   xs: 320px  => Mobile
+//   sm: 480px  => Landscape Mobile
+//   md: 768px  => Tablet
+//   lg: 1024px => Landscape Tablet
+//   xl: 1200px => Laptop & PC
+
+@media only screen and (min-width: 320px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    .icon-menu {
+      display: none !important;
+    }
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+      transform: translateX(0) !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}

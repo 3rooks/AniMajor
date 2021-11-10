@@ -1,0 +1,15 @@
+footer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #14181c;
+  .sign {
+    font-family: 'Megrim', cursive;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: white;
+  }
+}
