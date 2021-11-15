@@ -101,6 +101,7 @@ const SHOW_CART = () => {
     const REMOVE_LAST_ITEM = document.querySelector(".btn-remove-item");
     REMOVE_LAST_ITEM.addEventListener("click", () => {
       PRODUCTS_IN_CART.pop();
+      alert("ITEM REMOVED");
       sessionStorage.setItem("CART", JSON.stringify(PRODUCTS_IN_CART));
     });
 
